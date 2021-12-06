@@ -5,6 +5,11 @@
   align-items: center;
   justify-content: space-between;
 }
+@media print, screen and (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+}
 .header-logo {
   width: 300px;
   margin-left: 100px;
@@ -16,19 +21,30 @@
   margin-right: 100px;
 }
 .header-register {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #05cf28;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #ffdb00;
   color: #fff;
   border-radius: 80px;
-  margin-right: 20px;
+}
+.header-register a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 12px 24px;
 }
 .header-already {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #0c81ae;
+  font-size: 12px;
   border-radius: 80px;
   border: 1px solid #0c81ae;
+  margin-right: 20px;
+}
+.header-already a {
+  color: #0c81ae;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 10px 20px;
 }
 @media print, screen and (max-width: 1040px) and (min-width: 769px) {
   .header-logo {
@@ -51,7 +67,8 @@
   }
   .header-already {
     font-size: 12px;
-    padding: 5px 10px;
+    padding: 0px;
+    margin: 0;
   }
 }
 
@@ -98,6 +115,11 @@
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+@media print, screen and (max-width: 1080px) {
+  .top-text {
+    width: 500px;
+  }
 }
 @media print, screen and (max-width: 768px) {
   .top-text {
@@ -150,14 +172,20 @@
   background-color: #fcff00;
 }
 .top-title {
-  font-size: 54px;
-  font-weight: bold;
+  font-size: 64px;
+  font-weight: 900;
   color: #fff;
   text-shadow: 2px 2px 0 #0040bc;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  width: 500px;
+  width: 600px;
+}
+@media print, screen and (max-width: 1080px) {
+  .top-title {
+    font-size: 54px;
+    width: 500px;
+  }
 }
 @media print, screen and (max-width: 768px) {
   .top-title {
@@ -166,10 +194,11 @@
     margin-left: 10px;
   }
 }
-.top-title span {
-  color: #fcff00;
-  font-size: 1.6em;
-  margin-right: 0.15em;
+.top-title-name {
+  font-size: 28px;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 2px 2px 0 #0040bc;
 }
 .top-message {
   color: #e60013;
@@ -202,6 +231,54 @@
   }
 }
 
+.about {
+  margin-top: 100px;
+}
+.about-title {
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+}
+.about-text {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 50px;
+}
+.about-btn {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Josefin Sans";
+  padding: 12px 24px;
+  margin-top: 50px;
+  width: 470px;
+  background-color: #ffdb00;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 80px;
+  text-align: center;
+}
+.about-btn a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@media print, screen and (max-width: 768px) {
+  .about {
+    margin-top: 50px;
+  }
+  .about-title {
+    font-size: 44px;
+  }
+  .about-text {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  .about-btn {
+    width: 300px;
+  }
+}
+
 .appeal {
   text-align: center;
   margin-top: 80px;
@@ -212,7 +289,6 @@
   }
 }
 .appeal-title {
-  color: #e60013;
   font-size: 40px;
   font-weight: bold;
   position: relative;
@@ -225,28 +301,15 @@
     font-size: 28px;
   }
 }
-.appeal-title:before,
-.appeal-title:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 50px;
-  height: 3px;
-  background-color: #e60013;
-  -webkit-transform: rotate(-60deg);
-  transform: rotate(-60deg);
-}
-.appeal-title:before {
-  left: -45px;
-}
-.appeal-title:after {
-  right: -35px;
-}
 .appeal-text {
   font-size: 28px;
   text-align: center;
   margin-top: 30px;
+}
+@media print, screen and (max-width: 768px) {
+  .appeal-text {
+    font-size: 20px;
+  }
 }
 
 @media print, screen and (max-width: 1040px) and (min-width: 769px) {
@@ -479,7 +542,7 @@
 .worry {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #e1f6ff;
+  margin-top: 50px;
 }
 .worry-title {
   font-size: 36px;
@@ -491,162 +554,37 @@
   color: #0daeec;
   margin: 0 0.15em;
 }
-@media print, screen and (max-width: 768px) {
-  .worry-title {
-    font-size: 23px;
-  }
-}
-.worry-area {
-  position: relative;
-  width: 100%;
-  height: 500px;
-}
 .worry-uncle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 400px;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
-/*
-@media print, screen and (max-width: 768px) {
-  .worry-uncle {
-    width: 400px;
-  }
-}*/
-.worry-hatena-1 {
-  position: absolute;
-  top: 55%;
-  left: 32%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 80px;
-  transform: rotate(-15deg);
-}
-@media print, screen and (max-width: 1080px) {
-  .worry-hatena-1 {
-    display: none;
-  }
-}
-.worry-hatena-2 {
-  position: absolute;
-  top: 35%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 80px;
-  transform: rotate(15deg);
-}
-@media print, screen and (max-width: 1040px) and (min-width: 769px) {
-  .worry-hatena-2 {
-    top: 15%;
-    left: 65%;
-  }
-}
-.worry-message-1 {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 230px;
-  height: 160px;
-  border-radius: 160px;
-  /*background-color: rgba(253, 238, 32, 0.8);*/
-  color: #fff;
-  background-color: #0daeec;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+.worry-uncle img {
   text-align: center;
 }
-.worry-message-2 {
-  position: absolute;
-  top: 70%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 230px;
-  height: 160px;
-  border-radius: 160px;
-  color: #fff;
-  background-color: #0daeec;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+.worry-message {
+  font-size: 28px;
+  font-weight: 400;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-.worry-message-3 {
-  position: absolute;
-  top: 50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 230px;
-  height: 160px;
-  border-radius: 160px;
-  color: #fff;
-  background-color: #0daeec;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  text-align: center;
+.worry-arrow {
+  width: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media print, screen and (max-width: 768px) {
-  .worry-area {
-    height: 320px;
+  .worry {
+    margin-top: 0;
+    padding-bottom: 30px;
   }
-  .worry-uncle {
-    width: 300px;
+  .worry-title {
+    font-size: 28px;
   }
-  .worry-hatena-2 {
-    left: 70%;
-    width: 50px;
-  }
-  .worry-message-1 {
-    display: none;
-  }
-  .worry-message-2 {
-    display: none;
-  }
-  .worry-message-3 {
-    display: none;
-  }
-  .worry-message-sp {
-    background-color: #e1f6ff;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .worry-message-sp-item {
-    width: 90%;
-    padding: 10px;
-    border-radius: 160px;
-    color: #fff;
-    background-color: #0daeec;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .worry-message {
     font-size: 20px;
-    text-align: center;
-    margin-top: 20px;
-  }
-}
-@media print, screen and (min-width: 769px) {
-  .worry-message-sp {
-    display: none;
   }
 }
 
@@ -679,11 +617,7 @@
     font-size: 28px;
   }
 }
-.relief-title span {
-  font-size: 1.6em;
-  color: #e60013;
-  margin: 0 0.15em;
-}
+
 .relief-list {
   display: flex;
   align-items: stretch;
@@ -733,14 +667,22 @@
 }
 
 .relief-item-img {
-  width: 96px;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.relief-item-img img {
+  width: 40px;
   margin-left: auto;
   margin-right: auto;
 }
 .relief-item-title {
   font-size: 24px;
   font-weight: bold;
-  color: #e60013;
   margin-top: 20px;
   text-align: center;
 }
