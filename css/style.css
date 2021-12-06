@@ -56,19 +56,24 @@
 }
 
 .top {
-  /*background-image: url(../img/top-back.jpg);*/
-  background: linear-gradient(
+  background-image: url(../img/top-back.jpg);
+  /*background: linear-gradient(
       135deg,
       rgba(13, 174, 236, 0.9),
       rgba(13, 174, 236, 0.9)
     ),
-    url(../img/top-back.jpg);
+    url(../img/top-back.jpg);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 400px;
+  height: 600px;
   position: relative;
+}
+@media print, screen and (max-width: 768px) {
+  .top {
+    height: 500px;
+  }
 }
 .top-img {
   width: 300px;
@@ -126,7 +131,7 @@
   text-align: center;
   margin: 0 auto;
   width: 140px;
-  color: #0daeec;
+  color: #e60013;
 }
 @media print, screen and (max-width: 768px) {
   .top-theme-item:nth-child(n + 3) {
@@ -145,14 +150,14 @@
   background-color: #fcff00;
 }
 .top-title {
-  font-size: 44px;
+  font-size: 54px;
   font-weight: bold;
   color: #fff;
   text-shadow: 2px 2px 0 #0040bc;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  width: 430px;
+  margin-top: 20px;
+  width: 500px;
 }
 @media print, screen and (max-width: 768px) {
   .top-title {
@@ -167,19 +172,19 @@
   margin-right: 0.15em;
 }
 .top-message {
-  color: #fcff00;
+  color: #e60013;
   font-size: 28px;
   font-weight: bold;
   /*text-decoration: underline;*/
   font-style: italic;
-  text-shadow: 2px 2px 0 #0040bc;
+  /*text-shadow: 2px 2px 0 #fcff00;*/
 
-  margin-top: 20px;
+  margin-top: 30px;
 }
 @media print, screen and (min-width: 1081px) {
   .top-message {
     padding-bottom: 3px;
-    border-bottom: 3px solid #fcff00;
+    border-bottom: 3px solid #e60013;
     display: inline-block;
   }
 }
@@ -503,13 +508,14 @@
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  width: 300px;
+  width: 400px;
 }
+/*
 @media print, screen and (max-width: 768px) {
   .worry-uncle {
-    width: 150px;
+    width: 400px;
   }
-}
+}*/
 .worry-hatena-1 {
   position: absolute;
   top: 55%;
@@ -601,7 +607,7 @@
     height: 320px;
   }
   .worry-uncle {
-    width: 200px;
+    width: 300px;
   }
   .worry-hatena-2 {
     left: 70%;
@@ -900,7 +906,7 @@
   justify-content: center;
 }
 .reason-item-img img {
-  width: 70%;
+  width: 90%;
 }
 @media print, screen and (max-width: 768px) {
   .reason-item-img {
