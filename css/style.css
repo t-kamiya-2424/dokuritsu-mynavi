@@ -175,7 +175,7 @@
   font-size: 64px;
   font-weight: 900;
   color: #fff;
-  text-shadow: 2px 2px 0 #0040bc;
+  text-shadow: 2px 2px 0 #111;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -198,7 +198,7 @@
   font-size: 28px;
   font-weight: 500;
   color: #fff;
-  text-shadow: 2px 2px 0 #0040bc;
+  text-shadow: 2px 2px 0 #111;
 }
 .top-message {
   color: #e60013;
@@ -276,6 +276,7 @@
   }
   .about-btn {
     width: 300px;
+    margin-top: 30px;
   }
 }
 
@@ -783,14 +784,14 @@
 /*おすすめな理由*/
 .reason {
   margin-top: 80px;
-  background-color: rgb(225, 246, 255);
   padding-top: 80px;
   padding-bottom: 80px;
 }
 @media print, screen and (max-width: 768px) {
   .reason {
+    margin-top: 0;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
 }
 .reason-title {
@@ -814,6 +815,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+}
+@media print, screen and (max-width: 768px) {
+  .reason-list {
+    margin-top: 0;
+  }
 }
 .reason-item {
   display: flex;
@@ -839,6 +845,12 @@
 @media print, screen and (max-width: 768px) {
   .reason-item {
     display: block;
+  }
+  .reason-item:nth-child(2) {
+    margin-top: 0px;
+  }
+  .reason-item:nth-child(3) {
+    margin-top: 0px;
   }
 }
 .reason-item-img {
@@ -872,7 +884,7 @@
     max-width: 540px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 0;
+    padding: 0;
   }
 }
 .reason-item-text-number {
@@ -890,8 +902,8 @@
   margin-right: auto;
 }
 .reason-item-text-title {
-  font-size: 24px;
-  font-weight: normal;
+  font-size: 28px;
+  font-weight: 700;
   margin-top: 20px;
   text-align: center;
 }
@@ -918,7 +930,7 @@
 }
 @media print, screen and (max-width: 768px) {
   .voice-title {
-    font-size: 23px;
+    font-size: 28px;
   }
 }
 .voice-title span {
@@ -935,6 +947,7 @@
 @media print, screen and (max-width: 1040px) and (min-width: 769px) {
   .voice-list {
     flex-wrap: wrap;
+    margin-top: 30px;
   }
 }
 @media print, screen and (max-width: 768px) {
@@ -1002,7 +1015,7 @@
 }
 
 .faq {
-  background-color: #e1f6ff;
+  background-color: #ffdb00;
   padding-top: 50px;
   padding-bottom: 50px;
   margin-top: 80px;
@@ -1020,46 +1033,83 @@
 .faq-list {
   width: 95%;
   max-width: 900px;
-  border: 1px solid #dddddd;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
+@media print, screen and (max-width: 768px) {
+  .faq-list {
+    margin-top: 0;
+  }
+}
 .faq-item {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 10px 20px;
-  border-bottom: 1px solid #dddddd;
-}
-.faq-item-q {
-  background-color: #fff;
-}
-.faq-item-a {
-  background-color: #fafafa;
-}
-.faq-item-left {
-  font-size: 32px;
-  font-weight: bold;
-}
-.faq-item-left-q {
-  color: #0daeec;
-}
-.faq-item-left-a {
-  color: #ec280d;
 }
 .faq-item-right {
-  margin-left: 20px;
-  font-size: 18px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 24px;
+}
+@media print, screen and (max-width: 768px) {
+  .faq-item-right {
+    text-align: left;
+  }
 }
 .faq-item-right-q {
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 900;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 100px;
+}
+@media print, screen and (max-width: 768px) {
+  .faq-item-right-q {
+    margin-top: 50px;
+    font-size: 24px;
+  }
+}
+.faq-item-line {
+  width: 32px;
+  height: 1px;
+  background-color: #87977e;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.last-btn {
+  margin: 100px auto 99px auto;
+  width: 717px;
+  max-width: 100%;
+  background: #ffdb00;
+  border-radius: 80px;
+  box-shadow: 0px 2px 5px 0px #ffea00;
+}
+.last-btn a {
+  color: #333;
+  flex: none;
+  font-family: "Josefin Sans";
+  font-size: 32px;
+  font-weight: 700;
+  height: 50px;
+  letter-spacing: 0.15em;
+  line-height: 1.6;
+  padding: 12px 24px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media print, screen and (max-width: 768px) {
+  .last-btn {
+    margin: 50px auto 50px auto;
+    width: 300px;
+  }
+  .last-btn a {
+    font-size: 26px;
+  }
 }
 
 .footer {
   width: 100%;
-  background-color: #e1f6ff;
+  background-color: #eeeeee;
 }
 .copyright {
   padding-top: 30px;
