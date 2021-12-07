@@ -560,11 +560,17 @@
   display: inline-block;
   border-bottom: 5px solid #e60013;
 }
-.worry-title span {
-  font-size: 1.6em;
-  color: #0daeec;
-  margin: 0 0.15em;
+@media print, screen and (min-width: 769px) {
+  .worry-title-sp {
+    display: none;
+  }
 }
+@media print, screen and (max-width: 768px) {
+  .worry-title-pc {
+    display: none;
+  }
+}
+
 .worry-uncle {
   width: 66%;
   margin-left: auto;
