@@ -1086,7 +1086,9 @@
 .last-btn a {
   color: #333;
   flex: none;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", Meiryo, メイリオ, HelveticaNeue, Helvetica,
+    arial, sans-serif;
   font-size: 32px;
   font-weight: 700;
   height: 50px;
