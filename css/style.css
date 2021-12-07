@@ -241,7 +241,8 @@
   text-align: center;
   line-height: 1.1;
   display: inline-block;
-  border-bottom: 5px solid #e60013;
+  padding: 0 10px 10px;
+  background: linear-gradient(transparent 70%, rgb(230, 0, 19, 0.7) 0%);
 }
 .about-text {
   font-size: 36px;
@@ -275,6 +276,8 @@
   }
   .about-title {
     font-size: 44px;
+    padding: 0 5px 0px;
+    background: linear-gradient(transparent 70%, rgb(230, 0, 19, 0.7) 0%);
   }
   .about-text {
     font-size: 24px;
@@ -558,7 +561,8 @@
   text-align: center;
   line-height: 1.1;
   display: inline-block;
-  border-bottom: 5px solid #e60013;
+  padding: 0 5px 5px;
+  background: linear-gradient(transparent 70%, rgb(230, 0, 19, 0.7) 0%);
 }
 @media print, screen and (min-width: 769px) {
   .worry-title-sp {
@@ -599,6 +603,9 @@
   }
   .worry-title {
     font-size: 28px;
+    line-height: 1.6;
+    padding: 0 5px 0px;
+    background: linear-gradient(transparent 75%, rgb(230, 0, 19, 0.7) 0%);
   }
   .worry-message {
     font-size: 20px;
