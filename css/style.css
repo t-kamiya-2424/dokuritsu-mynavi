@@ -248,7 +248,9 @@
 .about-btn {
   font-size: 16px;
   font-weight: 700;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", Meiryo, メイリオ, HelveticaNeue, Helvetica,
+    arial, sans-serif;
   padding: 12px 24px;
   margin-top: 50px;
   width: 470px;
