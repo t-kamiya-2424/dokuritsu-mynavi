@@ -1103,7 +1103,7 @@
     width: 300px;
   }
   .last-btn a {
-    font-size: 26px;
+    font-size: 21px;
   }
 }
 
@@ -1162,6 +1162,9 @@ body {
   line-height: 1.5;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Meiryo,
     メイリオ, HelveticaNeue, Helvetica, arial, sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 a {
