@@ -233,11 +233,15 @@
 
 .about {
   margin-top: 100px;
+  text-align: center;
 }
 .about-title {
   font-size: 72px;
   font-weight: 700;
   text-align: center;
+  line-height: 1.1;
+  display: inline-block;
+  border-bottom: 5px solid #e60013;
 }
 .about-text {
   font-size: 36px;
@@ -546,11 +550,15 @@
   padding-top: 50px;
   padding-bottom: 50px;
   margin-top: 50px;
+  text-align: center;
 }
 .worry-title {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
+  line-height: 1.1;
+  display: inline-block;
+  border-bottom: 5px solid #e60013;
 }
 .worry-title span {
   font-size: 1.6em;
@@ -785,7 +793,6 @@
 
 /*おすすめな理由*/
 .reason {
-  margin-top: 80px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -847,6 +854,7 @@
 @media print, screen and (max-width: 768px) {
   .reason-item {
     display: block;
+    margin-top: 0px;
   }
   .reason-item:nth-child(2) {
     margin-top: 0px;
@@ -923,7 +931,6 @@
 }
 
 .voice {
-  margin-top: 50px;
 }
 .voice-title {
   font-size: 36px;
@@ -1078,7 +1085,7 @@
 }
 
 .last-btn {
-  margin: 100px auto 99px auto;
+  margin: 80px auto;
   width: 717px;
   max-width: 100%;
   background: #ffdb00;
